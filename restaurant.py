@@ -338,7 +338,7 @@ try:
             frequent = 'No'
 
         with col1:
-            st.metric(label='Frequent customer or not',value=frequent)
+            st.metric(label='Frequent customer (Yes or No)',value=frequent)
 
         fig12 = px.line(x=df_orders['OrderDate'],y=df_orders['Number of orders'],labels={'x':'Order Date','y':'Number of orders'},\
                         title='Order Date vs Number of orders',width=900,height=700)
